@@ -37,6 +37,7 @@
     card = [self.deck drawRandomCard];
     
     NSLog(@"drew card %@", card.contents);
+    [sender setTitle:card.contents forState:UIControlStateSelected];
     
     sender.selected = !sender.isSelected;
     self.flipCount++;
