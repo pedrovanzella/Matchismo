@@ -10,4 +10,9 @@
 
 @interface Card : NSObject
 
+@property (strong, nonatomic)NSString *contents;
+@property (nonatomic, getter=isFaceUp)BOOL faceUp;
+
+- (int)match:(NSArray *)otherCards;
+
 @end
